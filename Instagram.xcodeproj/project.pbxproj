@@ -13,6 +13,9 @@
 		CD9A64182BF4C41A00CD5729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9A64172BF4C41A00CD5729 /* Preview Assets.xcassets */; };
 		CD9A642C2BF4C85600CD5729 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A642B2BF4C85600CD5729 /* MainTabView.swift */; };
 		CD9A642E2BF4D95500CD5729 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A642D2BF4D95500CD5729 /* ProfileView.swift */; };
+		CDE159BD2BF6124B0088B564 /* UserStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE159BC2BF6124B0088B564 /* UserStackView.swift */; };
+		CDE159BF2BF7452E0088B564 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE159BE2BF7452E0088B564 /* FeedView.swift */; };
+		CDE159C12BF745350088B564 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE159C02BF745350088B564 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CD9A64172BF4C41A00CD5729 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD9A642B2BF4C85600CD5729 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		CD9A642D2BF4D95500CD5729 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CDE159BC2BF6124B0088B564 /* UserStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStackView.swift; sourceTree = "<group>"; };
+		CDE159BE2BF7452E0088B564 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		CDE159C02BF745350088B564 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CD9A64242BF4C6E200CD5729 /* Authentication */,
+				CDE159BB2BF6123F0088B564 /* Components */,
 				CD9A64252BF4C6E300CD5729 /* Feed */,
 				CD9A64262BF4C6E400CD5729 /* Profile */,
 				CD9A64272BF4C6E500CD5729 /* Root */,
@@ -130,6 +137,8 @@
 		CD9A64252BF4C6E300CD5729 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				CDE159C02BF745350088B564 /* FeedCell.swift */,
+				CDE159BE2BF7452E0088B564 /* FeedView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -169,6 +178,14 @@
 				CD9A642B2BF4C85600CD5729 /* MainTabView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CDE159BB2BF6123F0088B564 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CDE159BC2BF6124B0088B564 /* UserStackView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE159C12BF745350088B564 /* FeedCell.swift in Sources */,
 				CD9A642E2BF4D95500CD5729 /* ProfileView.swift in Sources */,
 				CD9A64122BF4C41900CD5729 /* ContentView.swift in Sources */,
 				CD9A64102BF4C41900CD5729 /* InstagramApp.swift in Sources */,
 				CD9A642C2BF4C85600CD5729 /* MainTabView.swift in Sources */,
+				CDE159BF2BF7452E0088B564 /* FeedView.swift in Sources */,
+				CDE159BD2BF6124B0088B564 /* UserStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
