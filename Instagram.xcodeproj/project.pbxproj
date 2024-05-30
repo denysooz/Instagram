@@ -42,6 +42,8 @@
 		CDE4FA1B2C0507D20027DB53 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE4FA1A2C0507D20027DB53 /* UserService.swift */; };
 		CDE4FA1F2C0508BA0027DB53 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE4FA1E2C0508BA0027DB53 /* SearchViewModel.swift */; };
 		CDE4FA212C0511060027DB53 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE4FA202C0511060027DB53 /* EditProfileView.swift */; };
+		CDE4FA252C0737790027DB53 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE4FA242C0737790027DB53 /* EditProfileViewModel.swift */; };
+		CDE4FA272C073DF80027DB53 /* imageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE4FA262C073DF80027DB53 /* imageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		CDE4FA1A2C0507D20027DB53 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		CDE4FA1E2C0508BA0027DB53 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		CDE4FA202C0511060027DB53 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		CDE4FA242C0737790027DB53 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		CDE4FA262C073DF80027DB53 /* imageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE4FA1A2C0507D20027DB53 /* UserService.swift */,
+				CDE4FA262C073DF80027DB53 /* imageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -204,10 +209,8 @@
 		CD9A64262BF4C6E400CD5729 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				CD9A642D2BF4D95500CD5729 /* ProfileView.swift */,
-				CD5EF1DF2BFA601D009167B9 /* CurrentUserProfileView.swift */,
-				CDAA5B9A2BFB7469005D0A43 /* ProfileHeaderView.swift */,
-				CDE4FA202C0511060027DB53 /* EditProfileView.swift */,
+				CDE4FA222C07375A0027DB53 /* View */,
+				CDE4FA232C07375E0027DB53 /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -318,6 +321,25 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CDE4FA222C07375A0027DB53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD5EF1DF2BFA601D009167B9 /* CurrentUserProfileView.swift */,
+				CDE4FA202C0511060027DB53 /* EditProfileView.swift */,
+				CDAA5B9A2BFB7469005D0A43 /* ProfileHeaderView.swift */,
+				CD9A642D2BF4D95500CD5729 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDE4FA232C07375E0027DB53 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CDE4FA242C0737790027DB53 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,6 +425,7 @@
 				CD9A642E2BF4D95500CD5729 /* ProfileView.swift in Sources */,
 				CD9A64122BF4C41900CD5729 /* ContentView.swift in Sources */,
 				CDE159C52BF7D2920088B564 /* LoginView.swift in Sources */,
+				CDE4FA252C0737790027DB53 /* EditProfileViewModel.swift in Sources */,
 				CD9BFFDD2BFFDC0C000C63E7 /* AuthService.swift in Sources */,
 				CDE4FA1B2C0507D20027DB53 /* UserService.swift in Sources */,
 				CD5EF1E22BFA6247009167B9 /* Post.swift in Sources */,
@@ -410,6 +433,7 @@
 				CD5EF1E02BFA601D009167B9 /* CurrentUserProfileView.swift in Sources */,
 				CDE159C72BF8DADA0088B564 /* AddEmailView.swift in Sources */,
 				CDAA5B992BFB7301005D0A43 /* PostGridView.swift in Sources */,
+				CDE4FA272C073DF80027DB53 /* imageUploader.swift in Sources */,
 				CDE159CB2BF8DD890088B564 /* CreateUsernameView.swift in Sources */,
 				CD9BFFE12BFFDD99000C63E7 /* ContentViewModel.swift in Sources */,
 				CDE4FA212C0511060027DB53 /* EditProfileView.swift in Sources */,
