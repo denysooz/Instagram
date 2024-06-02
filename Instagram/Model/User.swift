@@ -27,7 +27,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "marryyar",
-            profileImageUrl: "mary",
+            profileImageUrl: nil,
             fullname: "Mary Yarmak",
             bio: "Best",
             email: "maryyar@gmail.com"
@@ -35,7 +35,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "batman01",
-            profileImageUrl: "batman",
+            profileImageUrl: nil,
             fullname: "Bruce Wayne",
             bio: "Dark Knight",
             email: "gothamknight@gmail.com"
@@ -43,7 +43,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "aigirls",
-            profileImageUrl: "AIgirl",
+            profileImageUrl: nil,
             fullname: "Lucy AI",
             bio: "AI is future",
             email: "ai001@gmail.com"
@@ -51,7 +51,7 @@ extension User {
         .init(
             id: NSUUID().uuidString,
             username: "einstein_official",
-            profileImageUrl: "albert",
+            profileImageUrl: nil,
             fullname: "Albert Einstein",
             bio: "Math is my profession",
             email: "albert_ein@gmail.com"

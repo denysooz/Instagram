@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 struct Post: Identifiable, Hashable, Codable {
     let id: String
@@ -13,7 +14,7 @@ struct Post: Identifiable, Hashable, Codable {
     let caption: String
     var likes: Int
     let imageUrl: String
-    let timestamp: Date
+    let timestamp: Timestamp
     var user: User?
 }
 
@@ -25,7 +26,7 @@ extension Post {
             caption: "Me <3",
             likes: 43543,
             imageUrl: "mary-1",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
         .init(
@@ -34,7 +35,7 @@ extension Post {
             caption: "Me <33",
             likes: 321312,
             imageUrl: "mary-2",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
         .init(
@@ -43,7 +44,7 @@ extension Post {
             caption: "Me <333",
             likes: 43544343,
             imageUrl: "mary-3",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[0]
         ),
         .init(
@@ -52,7 +53,7 @@ extension Post {
             caption: "That city needs a new hero...",
             likes: 12323,
             imageUrl: "batman",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[1]
         ),
         .init(
@@ -61,7 +62,7 @@ extension Post {
             caption: "Subscribe me))",
             likes: 21312,
             imageUrl: "AIgirl",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[2]
         ),
         .init(
@@ -70,7 +71,7 @@ extension Post {
             caption: "Cheese!",
             likes: 123213,
             imageUrl: "albert",
-            timestamp: Date(),
+            timestamp: Timestamp(),
             user: User.MOCK_USERS[3]
         ),
     ]
